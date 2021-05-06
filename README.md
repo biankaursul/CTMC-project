@@ -6,6 +6,7 @@ Most of the code we wrote can be found inside Cell-DeepSORT.ipynb. Additional sc
 ## Demo
 
 Our tracking algorithm performing on the 3T3-run05 sequence.
+
 ![grab-landing-page](https://github.com/biankaursul/CTMC-project/blob/master/output.gif)
 ## 
 ## Dependencies
