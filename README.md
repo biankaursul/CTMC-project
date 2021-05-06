@@ -5,9 +5,16 @@ Most of the code we wrote can be found inside Cell-DeepSORT.ipynb. Additional sc
 
 ## Demo
 
-Our tracking algorithm performing on the 3T3-run05 sequence.
+Our tracking algorithm performing on the 3T3-run05 sequence: 
 
-![grab-landing-page](https://github.com/biankaursul/CTMC-project/blob/master/output.gif)
+![3t3](https://github.com/biankaursul/CTMC-project/blob/master/3t3.gif)
+
+Tracking result for CRE-BAG2-run03 sequence:
+
+![cre](https://github.com/biankaursul/CTMC-project/blob/master/cre-bag2.gif)
+
+
+
 ## 
 ## Dependencies
 
