@@ -1,0 +1,363 @@
+
+Eval Config:
+USE_PARALLEL         : False                         
+NUM_PARALLEL_CORES   : 8                             
+BREAK_ON_ERROR       : True                          
+RETURN_ON_ERROR      : False                         
+LOG_ON_ERROR         : /home/wg49/ctmc/TrackEval/error_log.txt
+PRINT_RESULTS        : True                          
+PRINT_ONLY_COMBINED  : False                         
+PRINT_CONFIG         : True                          
+TIME_PROGRESS        : True                          
+DISPLAY_LESS_PROGRESS : False                         
+OUTPUT_SUMMARY       : True                          
+OUTPUT_EMPTY_CLASSES : True                          
+OUTPUT_DETAILED      : True                          
+PLOT_CURVES          : True                          
+
+MotChallenge2DBox Config:
+PRINT_CONFIG         : True                          
+GT_FOLDER            : /home/wg49/ctmc/TrackEval/data/gt/mot_challenge/
+TRACKERS_FOLDER      : /home/wg49/ctmc/TrackEval/data/trackers/mot_challenge/
+OUTPUT_FOLDER        : None                          
+TRACKERS_TO_EVAL     : ['deepsort']                  
+CLASSES_TO_EVAL      : ['pedestrian']                
+BENCHMARK            : ctmc                          
+SPLIT_TO_EVAL        : train                         
+INPUT_AS_ZIP         : False                         
+DO_PREPROC           : False                         
+TRACKER_SUB_FOLDER   : data                          
+OUTPUT_SUB_FOLDER    :                               
+TRACKER_DISPLAY_NAMES : None                          
+SEQMAP_FOLDER        : None                          
+SEQMAP_FILE          : None                          
+SEQ_INFO             : None                          
+GT_LOC_FORMAT        : {gt_folder}/{seq}/gt/gt.txt   
+SKIP_SPLIT_FOL       : False                         
+
+Evaluating 1 tracker(s) on 27 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating deepsort
+
+    MotChallenge2DBox.get_raw_seq_data(deepsort, 3T3-run05)                0.5478 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3460 sec
+    HOTA.eval_sequence()                                                   0.6596 sec
+    CLEAR.eval_sequence()                                                  0.1248 sec
+    Identity.eval_sequence()                                               0.0273 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(3T3-run05, deepsort)                                     1.7136 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, 3T3-run07)                0.2314 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3109 sec
+    HOTA.eval_sequence()                                                   0.5544 sec
+    CLEAR.eval_sequence()                                                  0.0932 sec
+    Identity.eval_sequence()                                               0.0182 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(3T3-run07, deepsort)                                     1.2125 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, 3T3-run09)                0.3093 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3392 sec
+    HOTA.eval_sequence()                                                   0.5866 sec
+    CLEAR.eval_sequence()                                                  0.0998 sec
+    Identity.eval_sequence()                                               0.0204 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(3T3-run09, deepsort)                                     1.3626 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, A-10-run05)               0.1943 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2460 sec
+    HOTA.eval_sequence()                                                   0.4403 sec
+    CLEAR.eval_sequence()                                                  0.0734 sec
+    Identity.eval_sequence()                                               0.0144 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(A-10-run05, deepsort)                                    0.9725 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, A-10-run07)               0.6080 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.4104 sec
+    HOTA.eval_sequence()                                                   0.7731 sec
+    CLEAR.eval_sequence()                                                  0.1427 sec
+    Identity.eval_sequence()                                               0.0314 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(A-10-run07, deepsort)                                    1.9811 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, A-549-run03)              0.3079 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2607 sec
+    HOTA.eval_sequence()                                                   0.4767 sec
+    CLEAR.eval_sequence()                                                  0.0875 sec
+    Identity.eval_sequence()                                               0.0165 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(A-549-run03, deepsort)                                   1.1552 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, APM-run03)                0.1909 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2315 sec
+    HOTA.eval_sequence()                                                   0.3914 sec
+    CLEAR.eval_sequence()                                                  0.0743 sec
+    Identity.eval_sequence()                                               0.0140 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(APM-run03, deepsort)                                     0.9062 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, APM-run05)                0.3704 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3281 sec
+    HOTA.eval_sequence()                                                   0.5671 sec
+    CLEAR.eval_sequence()                                                  0.1116 sec
+    Identity.eval_sequence()                                               0.0242 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(APM-run05, deepsort)                                     1.4074 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, BPAE-run05)               0.2159 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2850 sec
+    HOTA.eval_sequence()                                                   0.4529 sec
+    CLEAR.eval_sequence()                                                  0.0862 sec
+    Identity.eval_sequence()                                               0.0167 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(BPAE-run05, deepsort)                                    1.0598 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, BPAE-run07)               0.4685 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3630 sec
+    HOTA.eval_sequence()                                                   0.5992 sec
+    CLEAR.eval_sequence()                                                  0.1235 sec
+    Identity.eval_sequence()                                               0.0220 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(BPAE-run07, deepsort)                                    1.5874 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, CRE-BAG2-run03)           0.4256 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2717 sec
+    HOTA.eval_sequence()                                                   0.5290 sec
+    CLEAR.eval_sequence()                                                  0.1019 sec
+    Identity.eval_sequence()                                               0.0235 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(CRE-BAG2-run03, deepsort)                                1.3587 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, CV-1-run03)               0.1841 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2512 sec
+    HOTA.eval_sequence()                                                   0.4479 sec
+    CLEAR.eval_sequence()                                                  0.0781 sec
+    Identity.eval_sequence()                                               0.0146 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(CV-1-run03, deepsort)                                    0.9792 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, LLC-MK2-run03)            0.3479 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3232 sec
+    HOTA.eval_sequence()                                                   0.6084 sec
+    CLEAR.eval_sequence()                                                  0.1073 sec
+    Identity.eval_sequence()                                               0.0203 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(LLC-MK2-run03, deepsort)                                 1.4137 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, LLC-MK2-run05)            0.2731 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3027 sec
+    HOTA.eval_sequence()                                                   0.5489 sec
+    CLEAR.eval_sequence()                                                  0.0915 sec
+    Identity.eval_sequence()                                               0.0173 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(LLC-MK2-run05, deepsort)                                 1.2380 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, LLC-MK2-run07)            0.5789 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3601 sec
+    HOTA.eval_sequence()                                                   0.6931 sec
+    CLEAR.eval_sequence()                                                  0.1313 sec
+    Identity.eval_sequence()                                               0.0255 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(LLC-MK2-run07, deepsort)                                 1.7967 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, MDBK-run05)               0.5491 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2595 sec
+    HOTA.eval_sequence()                                                   0.5360 sec
+    CLEAR.eval_sequence()                                                  0.1092 sec
+    Identity.eval_sequence()                                               0.0217 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(MDBK-run05, deepsort)                                    1.4814 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, MDBK-run07)               0.7580 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3273 sec
+    HOTA.eval_sequence()                                                   0.6664 sec
+    CLEAR.eval_sequence()                                                  0.1389 sec
+    Identity.eval_sequence()                                               0.0435 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(MDBK-run07, deepsort)                                    1.9461 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, MDBK-run09)               0.5361 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3706 sec
+    HOTA.eval_sequence()                                                   0.6958 sec
+    CLEAR.eval_sequence()                                                  0.1311 sec
+    Identity.eval_sequence()                                               0.0254 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(MDBK-run09, deepsort)                                    1.7662 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, MDOK-run05)               0.3308 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3019 sec
+    HOTA.eval_sequence()                                                   0.5520 sec
+    CLEAR.eval_sequence()                                                  0.1048 sec
+    Identity.eval_sequence()                                               0.0192 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(MDOK-run05, deepsort)                                    1.3136 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, MDOK-run07)               0.2947 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3121 sec
+    HOTA.eval_sequence()                                                   0.5566 sec
+    CLEAR.eval_sequence()                                                  0.0991 sec
+    Identity.eval_sequence()                                               0.0187 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(MDOK-run07, deepsort)                                    1.2856 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, MDOK-run09)               0.3749 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3363 sec
+    HOTA.eval_sequence()                                                   0.6335 sec
+    CLEAR.eval_sequence()                                                  0.1134 sec
+    Identity.eval_sequence()                                               0.0204 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(MDOK-run09, deepsort)                                    1.4844 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, OK-run05)                 0.2727 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2225 sec
+    HOTA.eval_sequence()                                                   0.4099 sec
+    CLEAR.eval_sequence()                                                  0.0779 sec
+    Identity.eval_sequence()                                               0.0142 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(OK-run05, deepsort)                                      1.0008 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, OK-run07)                 0.4051 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2668 sec
+    HOTA.eval_sequence()                                                   0.5043 sec
+    CLEAR.eval_sequence()                                                  0.1049 sec
+    Identity.eval_sequence()                                               0.0242 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(OK-run07, deepsort)                                      1.3108 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, PL1Ut-run03)              0.6228 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3141 sec
+    HOTA.eval_sequence()                                                   0.6337 sec
+    CLEAR.eval_sequence()                                                  0.1273 sec
+    Identity.eval_sequence()                                               0.0276 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(PL1Ut-run03, deepsort)                                   1.7327 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, PL1Ut-run05)              0.1349 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2131 sec
+    HOTA.eval_sequence()                                                   0.3172 sec
+    CLEAR.eval_sequence()                                                  0.0552 sec
+    Identity.eval_sequence()                                               0.0131 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(PL1Ut-run05, deepsort)                                   0.7358 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, RK-13-run03)              0.1370 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1439 sec
+    HOTA.eval_sequence()                                                   0.2576 sec
+    CLEAR.eval_sequence()                                                  0.0439 sec
+    Identity.eval_sequence()                                               0.0085 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(RK-13-run03, deepsort)                                   0.5927 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, U2O-S-run05)              0.4984 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.3352 sec
+    HOTA.eval_sequence()                                                   0.6464 sec
+    CLEAR.eval_sequence()                                                  0.1230 sec
+    Identity.eval_sequence()                                               0.0234 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(U2O-S-run05, deepsort)                                   1.6335 sec
+
+All sequences for deepsort finished in 36.43 seconds
+
+HOTA: deepsort-pedestrian          HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      RHOTA     HOTA(0)   LocA(0)   HOTALocA(0)
+3T3-run05                          45.326    48.458    42.879    57.259    60.19     47.596    65.219    74.21     49.504    72.412    63.433    45.933    
+3T3-run07                          62.86     68.647    57.807    75.282    75.569    76.819    64.28     80.743    65.963    83.846    76.37     64.033    
+3T3-run09                          40.01     44.286    36.44     63.868    50.62     42.046    65.566    76.299    48.205    58.715    68.288    40.096    
+A-10-run05                         58.495    67.786    50.759    74.794    73.696    54.728    75.857    79.606    61.601    78.929    74.429    58.746    
+A-10-run07                         41.257    43.38     39.902    54.522    57.605    46.682    65.887    76.712    46.525    63.667    63.115    40.184    
+A-549-run03                        44.449    44.598    45.185    53.235    56.565    50.921    64.301    72.571    48.906    73.986    60.599    44.835    
+APM-run03                          23.069    25.349    21.384    30.079    48.168    25.018    58.028    70.732    25.263    41.654    52.765    21.979    
+APM-run05                          20.372    24.622    17.713    31.117    41.448    20.834    49.884    69.017    23.159    38.337    48.749    18.689    
+BPAE-run05                         31.209    28.706    34.305    31.531    63.32     37.746    73.239    76.347    32.812    44.402    67.364    29.911    
+BPAE-run07                         20.494    23.135    19.991    26.977    39.931    24.233    48.8      65.431    22.518    46        41.918    19.282    
+CRE-BAG2-run03                     45.141    49.969    40.952    56.419    65.116    46.15     64.856    75.641    48.045    67.894    67.805    46.036    
+CV-1-run03                         36.393    43.63     30.769    50.503    64.984    33.365    73.433    78.352    39.329    53.571    69.252    37.099    
+LLC-MK2-run03                      55.728    53.15     58.681    62.206    63.635    68.026    67.264    75.832    60.413    85.36     66.877    57.086    
+LLC-MK2-run05                      54.945    58.565    51.803    65.185    69.558    63.604    64.86     77.25     58.084    80.55     70.22     56.562    
+LLC-MK2-run07                      47.186    49.859    45.055    57.179    62.758    52.302    66.074    74.512    50.726    76.172    64.15     48.864    
+MDBK-run05                         48.138    51.178    46.068    56.812    67.717    52.592    66.62     76.538    50.987    69.525    68.658    47.734    
+MDBK-run07                         25.484    31.149    21.263    34.227    58.988    27.98     47.584    72.111    26.86     41.481    59.763    24.791    
+MDBK-run09                         32.258    38.704    27.269    43.445    60.434    36.226    50.875    73.124    34.342    51.545    62.237    32.08     
+MDOK-run05                         35.881    30.598    42.872    37.875    49.257    46.06     70.164    72.34     40.17     66.479    53.531    35.587    
+MDOK-run07                         31.076    35.289    27.757    45.332    49.199    34.923    62.131    72.396    35.389    52.84     57.975    30.634    
+MDOK-run09                         42.717    50.33     36.803    60.858    61.717    44.721    62.936    76.511    47.212    61.479    68.678    42.222    
+OK-run05                           36.803    48.517    28.37     53.429    64.709    33.768    59.637    73.983    38.827    56.092    65.464    36.72     
+OK-run07                           25.672    33.057    20.282    37.449    55.932    24.889    52.919    71.364    27.455    43.7      58.325    25.488    
+PL1Ut-run03                        34.967    44.086    27.976    50.705    60.941    34.143    55.926    74.052    37.632    55.044    63.767    35.1      
+PL1Ut-run05                        40.139    37.194    43.543    41.66     68.177    46.653    79.218    80.65     42.536    52.659    71.53     37.667    
+RK-13-run03                        56.175    49.994    63.201    70.17     53.356    67.622    71.417    75.862    66.574    82.782    69.445    57.488    
+U2O-S-run05                        50.412    53.489    47.73     61.147    64.719    55.581    64.682    75.559    54.018    75.204    68.125    51.233    
+COMBINED                           39.512    41.849    37.987    48.941    59.462    44.705    62.176    74.293    42.982    61.737    62.943    38.859    
+
+CLEAR: deepsort-pedestrian         MOTA      MOTP      MODA      CLR_Re    CLR_Pr    MTR       PTR       MLR       sMOTA     CLR_TP    CLR_FN    CLR_FP    IDSW      MT        PT        ML        Frag      
+3T3-run05                          43.546    71.25     44.011    69.571    73.132    39.623    45.283    15.094    23.545    25134     10993     9234      168       21        24        8         606       
+3T3-run07                          87.474    77.496    87.626    93.623    93.98     77.778    0         22.222    66.405    4933      336       316       8         7         0         2         42        
+3T3-run09                          35.478    72.238    37.333    81.752    64.794    50        45        5         12.782    7141      1594      3880      162       10        9         1         233       
+A-10-run05                         91.039    76.031    91.668    96.579    95.161    100       0         0         67.89     6607      234       336       43        6         0         0         68        
+A-10-run07                         29.096    76.136    29.497    62.072    65.582    37.778    42.222    20        14.283    22801     13932     11966     147       17        19        9         502       
+A-549-run03                        36.387    68.859    36.798    65.456    69.55     29.167    58.333    12.5      16.003    12254     6467      5365      77        7         14        3         428       
+APM-run03                          5.2283    68.284    5.6385    34.042    54.515    0         72.222    27.778    -5.5683   3236      6270      2700      39        0         13        5         222       
+APM-run05                          -13.488   67.658    -12.944   31.066    41.38     0         60.526    39.474    -23.535   6557      14550     9289      115       0         23        15        455       
+BPAE-run05                         28.178    73.592    28.359    39.077    78.475    10        60        30        17.859    3252      5070      892       15        1         6         3         102       
+BPAE-run07                         -29.012   64.659    -28.739   19.41     28.73     0         38.095    61.905    -35.872   6325      26261     15690     89        0         8         13        635       
+CRE-BAG2-run03                     59.8      71.471    60.204    73.424    84.742    39.759    54.217    6.0241    38.853    22177     8027      3993      122       33        45        5         414       
+CV-1-run03                         49.359    74.992    49.66     63.688    81.95     14.286    71.429    14.286    33.432    4027      2296      887       19        1         5         1         163       
+LLC-MK2-run03                      58.524    72.29     58.651    78.203    79.999    59.091    31.818    9.0909    36.854    14175     3951      3544      23        13        7         2         315       
+LLC-MK2-run05                      67.54     74.228    67.701    80.708    86.121    56        40        4         46.74     10015     2394      1614      20        14        10        1         169       
+LLC-MK2-run07                      47.169    71.435    47.37     69.241    75.996    50        41.071    8.9286    27.391    27911     12399     8816      81        28        23        5         582       
+MDBK-run05                         60.589    72.731    61.055    72.476    86.387    36.207    51.724    12.069    40.826    33017     12539     5203      212       21        30        7         864       
+MDBK-run07                         26.432    67.971    27.096    42.56     73.35     7.2       48        44.8      12.8      30220     40786     10980     472       9         60        56        1921      
+MDBK-run09                         37.956    69.264    38.348    55.118    76.672    25.424    49.153    25.424    21.015    21248     17302     6465      151       15        29        15        763       
+MDOK-run05                         8.2037    70.65     8.4971    42.695    55.525    25        30        45        -4.3272   9170      12308     7345      63        5         6         9         437       
+MDOK-run07                         11.989    69.296    12.557    52.348    56.814    23.077    69.231    7.6923    -4.0839   6366      5795      4839      69        3         9         1         348       
+MDOK-run09                         52.786    73.335    53.462    76.035    77.108    55.556    27.778    16.667    32.511    16064     5063      4769      143       10        5         3         454       
+OK-run05                           57.012    69.264    57.561    70.065    84.856    35.294    52.941    11.765    35.476    13510     5772      2411      106       12        18        4         498       
+OK-run07                           25.44     67.308    25.95     46.452    69.379    4.5455    75.758    19.697    10.254    16125     18588     7117      177       3         50        13        863       
+PL1Ut-run03                        44.947    70.308    45.689    64.446    77.456    21.311    65.574    13.115    25.812    31451     17351     9154      362       13        40        8         1155      
+PL1Ut-run05                        35.558    79.678    35.76     48.433    79.261    33.333    50        16.667    25.715    1437      1530      376       6         2         3         1         17        
+RK-13-run03                        53.02     71.718    53.357    92.435    70.286    75        25        0         26.877    5755      471       2433      21        6         2         0         59        
+U2O-S-run05                        64.981    71.212    65.282    79.881    84.548    51.111    42.222    6.6667    41.985    27336     6885      4996      103       23        19        3         495       
+COMBINED                           37.167    71.175    37.632    59.969    72.861    29.474    50.211    20.316    19.881    388244    259164    144610    3013      280       477       193       12810     
+
+Identity: deepsort-pedestrian      IDF1      IDR       IDP       IDTP      IDFN      IDFP      
+3T3-run05                          58.259    56.841    59.75     20535     15592     13833     
+3T3-run07                          74.805    74.663    74.948    3934      1335      1315      
+3T3-run09                          48.674    55.043    43.626    4808      3927      6213      
+A-10-run05                         74.202    74.755    73.657    5114      1727      1829      
+A-10-run07                         47.13     45.869    48.463    16849     19884     17918     
+A-549-run03                        57.16     55.478    58.948    10386     8335      7233      
+APM-run03                          30.216    24.542    39.303    2333      7173      3603      
+APM-run05                          23.381    20.467    27.262    4320      16787     11526     
+BPAE-run05                         44.665    33.453    67.181    2784      5538      1360      
+BPAE-run07                         16.487    13.813    20.445    4501      28085     17514     
+CRE-BAG2-run03                     62.806    58.611    67.646    17703     12501     8467      
+CV-1-run03                         48.056    42.701    54.945    2700      3623      2214      
+LLC-MK2-run03                      74.487    73.651    75.343    13350     4776      4369      
+LLC-MK2-run05                      68.492    66.339    70.789    8232      4177      3397      
+LLC-MK2-run07                      58.463    55.865    61.315    22519     17791     14208     
+MDBK-run05                         65.224    59.972    71.484    27321     18235     10899     
+MDBK-run07                         32.496    25.675    44.25     18231     52775     22969     
+MDBK-run09                         42.494    36.521    50.803    14079     24471     13634     
+MDOK-run05                         40.255    35.604    46.303    7647      13831     8868      
+MDOK-run07                         35.359    33.969    36.867    4131      8030      7074      
+MDOK-run09                         53.179    52.809    53.554    11157     9970      9676      
+OK-run05                           47.933    43.756    52.993    8437      10845     7484      
+OK-run07                           34.499    28.799    43.013    9997      24716     13245     
+PL1Ut-run03                        45.202    41.406    49.765    20207     28595     20398     
+PL1Ut-run05                        54.812    44.152    72.256    1310      1657      503       
+RK-13-run03                        75.538    87.44     66.488    5444      782       2744      
+U2O-S-run05                        69.986    68.055    72.031    23289     10932     9043      
+COMBINED                           49.365    44.998    54.671    291318    356090    241536    
+
+Count: deepsort-pedestrian         Dets      GT_Dets   IDs       GT_IDs    
+3T3-run05                          34368     36127     185       53        
+3T3-run07                          5249      5269      16        9         
+3T3-run09                          11021     8735      136       20        
+A-10-run05                         6943      6841      18        6         
+A-10-run07                         34767     36733     174       45        
+A-549-run03                        17619     18721     62        24        
+APM-run03                          5936      9506      87        18        
+APM-run05                          15846     21107     189       38        
+BPAE-run05                         4144      8322      33        10        
+BPAE-run07                         22015     32586     108       21        
+CRE-BAG2-run03                     26170     30204     195       83        
+CV-1-run03                         4914      6323      24        7         
+LLC-MK2-run03                      17719     18126     51        22        
+LLC-MK2-run05                      11629     12409     44        25        
+LLC-MK2-run07                      36727     40310     140       56        
+MDBK-run05                         38220     45556     124       58        
+MDBK-run07                         41200     71006     237       125       
+MDBK-run09                         27713     38550     110       59        
+MDOK-run05                         16515     21478     77        20        
+MDOK-run07                         11205     12161     68        13        
+MDOK-run09                         20833     21127     85        18        
+OK-run05                           15921     19282     95        34        
+OK-run07                           23242     34713     209       66        
+PL1Ut-run03                        40605     48802     212       61        
+PL1Ut-run05                        1813      2967      11        6         
+RK-13-run03                        8188      6226      44        8         
+U2O-S-run05                        32332     34221     129       45        
+COMBINED                           532854    647408    2863      950       
+
+Timing analysis:
+MotChallenge2DBox.get_raw_seq_data                                     10.1687 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            8.0330 sec
+HOTA.eval_sequence                                                     14.7380 sec
+CLEAR.eval_sequence                                                    2.7559 sec
+Identity.eval_sequence                                                 0.5663 sec
+Count.eval_sequence                                                    0.0001 sec
+eval_sequence                                                          36.4280 sec
+Evaluator.evaluate                                                     39.3033 sec

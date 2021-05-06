@@ -1,0 +1,110 @@
+
+Eval Config:
+USE_PARALLEL         : False                         
+NUM_PARALLEL_CORES   : 8                             
+BREAK_ON_ERROR       : True                          
+RETURN_ON_ERROR      : False                         
+LOG_ON_ERROR         : /home/wg49/ctmc/TrackEval/error_log.txt
+PRINT_RESULTS        : True                          
+PRINT_ONLY_COMBINED  : False                         
+PRINT_CONFIG         : True                          
+TIME_PROGRESS        : True                          
+DISPLAY_LESS_PROGRESS : False                         
+OUTPUT_SUMMARY       : True                          
+OUTPUT_EMPTY_CLASSES : True                          
+OUTPUT_DETAILED      : True                          
+PLOT_CURVES          : True                          
+
+MotChallenge2DBox Config:
+PRINT_CONFIG         : True                          
+GT_FOLDER            : /home/wg49/ctmc/TrackEval/data/gt/mot_challenge/
+TRACKERS_FOLDER      : /home/wg49/ctmc/TrackEval/data/trackers/mot_challenge/
+OUTPUT_FOLDER        : None                          
+TRACKERS_TO_EVAL     : ['deepsort']                  
+CLASSES_TO_EVAL      : ['pedestrian']                
+BENCHMARK            : ctmc                          
+SPLIT_TO_EVAL        : train                         
+INPUT_AS_ZIP         : False                         
+DO_PREPROC           : False                         
+TRACKER_SUB_FOLDER   : data                          
+OUTPUT_SUB_FOLDER    :                               
+TRACKER_DISPLAY_NAMES : None                          
+SEQMAP_FOLDER        : None                          
+SEQMAP_FILE          : None                          
+SEQ_INFO             : None                          
+GT_LOC_FORMAT        : {gt_folder}/{seq}/gt/gt.txt   
+SKIP_SPLIT_FOL       : False                         
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating deepsort
+
+    MotChallenge2DBox.get_raw_seq_data(deepsort, 3T3-run05)                0.8283 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.6454 sec
+    HOTA.eval_sequence()                                                   1.7036 sec
+    CLEAR.eval_sequence()                                                  0.9997 sec
+    Identity.eval_sequence()                                               0.5951 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(3T3-run05, deepsort)                                     4.7862 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, A-10-run05)               0.3114 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.4680 sec
+    HOTA.eval_sequence()                                                   1.0411 sec
+    CLEAR.eval_sequence()                                                  0.3230 sec
+    Identity.eval_sequence()                                               0.0281 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(A-10-run05, deepsort)                                    2.1789 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, A-549-run03)              0.5090 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.4904 sec
+    HOTA.eval_sequence()                                                   1.3049 sec
+    CLEAR.eval_sequence()                                                  0.6285 sec
+    Identity.eval_sequence()                                               0.1375 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(A-549-run03, deepsort)                                   3.0774 sec
+    MotChallenge2DBox.get_raw_seq_data(deepsort, MDBK-run05)               0.8642 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.5053 sec
+    HOTA.eval_sequence()                                                   1.6779 sec
+    CLEAR.eval_sequence()                                                  0.8375 sec
+    Identity.eval_sequence()                                               0.6605 sec
+    Count.eval_sequence()                                                  0.0000 sec
+eval_sequence(MDBK-run05, deepsort)                                    4.5538 sec
+
+All sequences for deepsort finished in 14.60 seconds
+
+HOTA: deepsort-pedestrian          HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      RHOTA     HOTA(0)   LocA(0)   HOTALocA(0)
+3T3-run05                          43.389    46.84     40.762    53.723    61.494    47.459    61.994    73.965    46.718    69.394    63.155    43.826    
+A-10-run05                         48.447    53.638    44.68     61.123    62.02     56.223    59.333    73.179    52.088    77.929    63.408    49.413    
+A-549-run03                        39.555    44.355    36.104    53.704    57.356    43.291    61.31     73.99     43.837    63.267    62.204    39.355    
+MDBK-run05                         40.157    45.488    36.103    50.935    64.818    43.508    58.127    75.446    42.735    59.318    66.457    39.421    
+COMBINED                           41.758    46.22     38.389    53.008    62.04     45.827    60.203    74.505    44.981    64.823    64.302    41.683    
+
+CLEAR: deepsort-pedestrian         MOTA      MOTP      MODA      CLR_Re    CLR_Pr    MTR       PTR       MLR       sMOTA     CLR_TP    CLR_FN    CLR_FP    IDSW      MT        PT        ML        Frag      
+3T3-run05                          42.47     70.841    42.987    65.176    74.602    37.736    47.17     15.094    23.465    23546     12581     8016      187       20        25        8         798       
+A-10-run05                         67.607    68.309    68.528    83.54     84.767    83.333    16.667    0         41.132    5715      1126      1027      63        5         1         0         176       
+A-549-run03                        38.833    70.559    39.287    66.46     70.98     33.333    54.167    12.5      19.267    12442     6279      5087      85        8         13        3         587       
+MDBK-run05                         51.078    71.439    51.697    65.14     82.893    31.034    51.724    17.241    32.473    29675     15881     6124      282       18        30        10        1174      
+COMBINED                           47.095    70.838    47.67     66.556    77.896    36.17     48.936    14.894    27.686    71378     35867     20254     617       51        69        21        2735      
+
+Identity: deepsort-pedestrian      IDF1      IDR       IDP       IDTP      IDFN      IDFP      
+3T3-run05                          55.318    51.823    59.318    18722     17405     12840     
+A-10-run05                         66.362    65.882    66.85     4507      2334      2235      
+A-549-run03                        49.76     48.176    51.452    9019      9702      8510      
+MDBK-run05                         53.922    48.147    61.27     21934     23622     13865     
+COMBINED                           54.488    50.522    59.13     54182     53063     37450     
+
+Count: deepsort-pedestrian         Dets      GT_Dets   IDs       GT_IDs    
+3T3-run05                          31562     36127     142       53        
+A-10-run05                         6742      6841      19        6         
+A-549-run03                        17529     18721     87        24        
+MDBK-run05                         35799     45556     149       58        
+COMBINED                           91632     107245    397       141       
+
+Timing analysis:
+MotChallenge2DBox.get_raw_seq_data                                     2.5129 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            2.1091 sec
+HOTA.eval_sequence                                                     5.7274 sec
+CLEAR.eval_sequence                                                    2.7886 sec
+Identity.eval_sequence                                                 1.4213 sec
+Count.eval_sequence                                                    0.0000 sec
+eval_sequence                                                          14.5964 sec
+Evaluator.evaluate                                                     16.8842 sec

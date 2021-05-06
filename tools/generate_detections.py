@@ -145,7 +145,8 @@ def generate_detections(encoder, mot_dir, output_dir, detection_dir=None):
             raise ValueError(
                 "Failed to created output directory '%s'" % output_dir)
 
-    for sequence in os.listdir(mot_dir):
+    seqs = [os.path.basename(detection_dir)]
+    for sequence in seqs : # os.listdir(detection_dir):
         print("Processing %s" % sequence)
         sequence_dir = os.path.join(mot_dir, sequence)
 
@@ -155,7 +156,7 @@ def generate_detections(encoder, mot_dir, output_dir, detection_dir=None):
             for f in os.listdir(image_dir)}
 
         detection_file = os.path.join(
-            detection_dir, sequence, "gt/gt.txt")
+            detection_dir, "gt/gt.txt")
         detections_in = np.loadtxt(detection_file, delimiter=',')
         detections_out = []
 
@@ -163,7 +164,8 @@ def generate_detections(encoder, mot_dir, output_dir, detection_dir=None):
         min_frame_idx = frame_indices.astype(np.int).min()
         max_frame_idx = frame_indices.astype(np.int).max()
         for frame_idx in range(min_frame_idx, max_frame_idx + 1):
-            print("Frame %05d/%05d" % (frame_idx, max_frame_idx))
+            if frame_idx % 50 == 0:
+                print("Frame %05d/%05d" % (frame_idx, max_frame_idx))
             mask = frame_indices == frame_idx
             rows = detections_in[mask]
 
@@ -204,7 +206,7 @@ def parse_args():
 
 def main():
     args = parse_args()
-    encoder = create_box_encoder(args.model, batch_size=32)
+    encoder = create_box_encoder(args.model, batch_size=64)
     generate_detections(encoder, args.mot_dir, args.output_dir,
                         args.detection_dir)
 

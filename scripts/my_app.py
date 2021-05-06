@@ -3,9 +3,12 @@ from __future__ import division, print_function, absolute_import
 
 import argparse
 import os
+import sys
 
 import cv2
 import numpy as np
+
+sys.path.append('../')
 
 from application_util import preprocessing
 from application_util import visualization
@@ -126,10 +129,9 @@ def create_detections(detection_mat, frame_idx, min_height=0):
     return detection_list
 
 
-
 def run(sequence_dir, detection_file, output_file, min_confidence,
         nms_max_overlap, min_detection_height, max_cosine_distance,
-        nn_budget, display, lambda_):
+        nn_budget, display):
     """Run multi-target tracker on a particular sequence.
 
     Parameters
@@ -159,8 +161,9 @@ def run(sequence_dir, detection_file, output_file, min_confidence,
 
     """
     seq_info = gather_sequence_info(sequence_dir, detection_file)
-    metric = nn_matching.NearestNeighborDistanceMetric("cosine", max_cosine_distance, nn_budget)
-    tracker = Tracker(metric, _lambda=lambda_)
+    metric = nn_matching.NearestNeighborDistanceMetric(
+        "cosine", max_cosine_distance, nn_budget)
+    tracker = Tracker(metric)
     results = []
     print("processing " + sequence_dir)
     def frame_callback(vis, frame_idx):
@@ -224,10 +227,6 @@ def parse_args():
     """
     parser = argparse.ArgumentParser(description="Deep SORT")
     parser.add_argument(
-        "--lambda", dest='lambda_',
-        default=0., type=float,
-        help="Association cost hyperparam")
-    parser.add_argument(
         "--sequence_dir", help="Path to MOTChallenge sequence directory",
         default=None, required=True)
     parser.add_argument(
@@ -265,5 +264,4 @@ if __name__ == "__main__":
     run(
         args.sequence_dir, args.detection_file, args.output_file,
         args.min_confidence, args.nms_max_overlap, args.min_detection_height,
-        args.max_cosine_distance, args.nn_budget, args.display,
-        args.lambda_)
+        args.max_cosine_distance, args.nn_budget, args.display)
